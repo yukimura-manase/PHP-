@@ -1,0 +1,82 @@
+
+< PHP・Laravel関連のコマンド >
+
+# PHPのインストール
+brew install php
+または、
+brew install php@7.2
+
+# composerをインストール
+brew install composer
+
+    composerは、PHP関連のパッケージ管理ツール
+
+# composerコマンドでインストールを確認
+composer
+
+
+# Laravelプロジェクトの作成(バージョン指定)
+composer create-project "laravel/laravel=6.*" sample-project名
+
+    composer create-project "laravel/laravel=6.*" robotama-laravel
+
+
+# Laravelプロジェクトのバージョン確認
+cd robotama-laravel
+php artisan -v
+
+
+# Laravelプロジェクトの開発用サーバーを起動
+php artisan serve
+
+
+# オートロード機能の起動
+composer dump-autoload
+
+    requireなんとかを使用無くても、どこからでも対象のソースやクラスを呼び出せるのです。
+    また、クラスを増やした、ファイルを増やした、変更した。
+    そんな場合も「composer dump-autoload」を打つだけです。
+
+
+# composer.lockに書かれている各ライブラリをインストールする。
+composer install
+
+    新しい環境ではじめにインストールするとき：composer install
+
+# composer.jsonをもとに各ファイルを最新版にアップデートする。
+composer update
+
+    何か新しいバンドルを追加したい：composer.jsonにかいてcomposer update
+
+
+本番のライブラリを最新版にしたい場合
+
+    開発環境でcomposer updateして問題なければcomposer.lockファイルを本番にコピーしてcomposer intallする
+
+
+composer関連ファイル
+
+    composer.lock：現在使用しているバンドルのバージョン等が管理されます。
+    composer.json：必要となるバンドルを記述します。
+    composer.pharで実行。
+
+
+
+【2021年】PHP環境構築【MacOS】
+https://yurupro.cloud/2070/
+
+【Mac】PHPのインストール方法！Homebrewの使い方と環境変数の通し方！
+https://tech.amefure.com/php-homebrew
+
+
+Laravelでバージョンを指定してプロジェクト作成
+https://tech.adseed.co.jp/laravel-project
+
+composer install と composer updateの違い
+https://qiita.com/YusukeHigaki/items/47dd3ec23544225f7301
+
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー

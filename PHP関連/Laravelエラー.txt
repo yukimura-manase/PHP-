@@ -1,0 +1,18 @@
+
+Laravelプロジェクトの作成時に発生したエラー: Script @php artisan package:discover --ansi handling the post-autoload-dump event returned with error code 255
+
+
+
+
+Laravel環境をインポートしたときに”artisan package:discover handling the post-autoload-dump event returned with error code 1″エラーが出た時に確認したいこと
+https://cpoint-lab.co.jp/article/201812/6788/
+
+
+【Laravel】composer installで「Script @php artisan package:discover –ansi handling the post-autoload-dump event returned with error code 1」エラー
+https://brainlog.jp/programming/laravel/post-1863/
+
+
+
+[Laravel]composer removeで「ansi handling the post-autoload-dump event returned with error」エラー対象法
+https://codesapuri.com/articles/2
+
